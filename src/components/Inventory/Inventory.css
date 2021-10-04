@@ -1,0 +1,12 @@
+.text-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    border: 1px solid orangered;
+    width: 400px;
+    padding: 10px;
+}

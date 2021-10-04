@@ -23,3 +23,7 @@
     -o-border-radius: 5px;
     cursor: pointer;
 }
+
+.product-link {
+    text-decoration: none;
+}

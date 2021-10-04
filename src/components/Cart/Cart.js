@@ -2,11 +2,11 @@ import React from 'react';
 
 const Cart = (props) => {
     const cart = props.cart;
-    console.log(cart);
+    // console.log(cart);
     let total = 0;
     for (let i = 0; i < cart.length; i++) {
         const product = cart[i];
-        total = total + product.price;
+        total = total + product.price * product.quantity;
     }
 
     let shipping = 0;
@@ -34,6 +34,9 @@ const Cart = (props) => {
             <p>Shipping: {shipping}</p>
             <p>Vat + Tax: {tax}</p>
             <p>Total Price: {grandTotal}</p>
+            {
+                props.children
+            }
         </div>
     );
 };
