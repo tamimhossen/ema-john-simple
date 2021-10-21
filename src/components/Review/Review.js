@@ -13,6 +13,9 @@ const Review = () => {
 
     const handleProceedCheckout = () => {
         history.push('./shipment');
+    //     setCart([]);
+    //     setOrderPlaced(true);
+    //     processOrder();
     }
 
     const removeProduct = (productKey) => {
